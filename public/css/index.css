@@ -18,13 +18,10 @@ footer {
     display: flex;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    max-width: 10rem;
+    width: 10rem;
     min-width: 320px;
     height: 1.5625rem;
     background: rgba(255, 255, 255, .9);
-    left: 50%;
-    /*margin-left: -5rem;*/
     z-index: 100;
 }
 

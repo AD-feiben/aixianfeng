@@ -13,8 +13,6 @@ header {
     background: #ffd600;
     position: absolute;
     top: 0;
-    left: 50%;
-    margin-left: -5rem;
     box-sizing: border-box;
     z-index: 100;
 }
