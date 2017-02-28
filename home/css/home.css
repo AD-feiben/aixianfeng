@@ -16,6 +16,7 @@ header {
     left: 50%;
     margin-left: -5rem;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 header a {
@@ -40,4 +41,32 @@ header div img {
 
 .banner a {
     display: block;
+}
+
+section {
+    margin-bottom: 0.3125rem;
+    background: #fff;
+}
+
+.menu {
+    padding: 0.3125rem;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    width: 25%;
+    text-align: center;
+}
+
+.menu ul li a{
+    color: #353d44;
+}
+
+.menu ul li img {
+    width: 100%;
 }
