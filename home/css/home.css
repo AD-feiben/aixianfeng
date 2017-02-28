@@ -1,0 +1,30 @@
+header {
+    height: 1.4375rem;
+}
+
+.header-inner {
+    height: 1.4375rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10px;
+    background: #ffd600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+header div {
+    text-align: center;
+}
+
+header .address {
+    display: inline-block;
+}
+
+header div img {
+    width: 0.625rem;
+    height: 0.625rem;
+}
