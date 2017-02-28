@@ -24,7 +24,7 @@ footer {
     height: 1.5625rem;
     background: rgba(255, 255, 255, .9);
     left: 50%;
-    margin-left: -5rem;
+    /*margin-left: -5rem;*/
     z-index: 100;
 }
 
