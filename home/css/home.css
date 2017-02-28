@@ -3,7 +3,8 @@ header {
 }
 
 .header-inner {
-    width: 10rem;
+    width: 100%;
+    max-width: 10rem;
     min-width: 320px;
     height: 1.4375rem;
     display: flex;
