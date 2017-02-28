@@ -16,12 +16,15 @@ header {
     box-sizing: border-box;
 }
 
-header div {
+header a {
+    display: block;
     text-align: center;
+    font-size: 0.667em;
 }
 
 header .address {
     display: inline-block;
+    font-size: 1.1667em;
 }
 
 header div img {
