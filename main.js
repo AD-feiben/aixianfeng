@@ -9,6 +9,6 @@ require.config({
 });
 
 
-require(['jquery', 'flexible'], function($){
+require(['jquery', 'flexible', 'index'], function($, flex, index){
 
 });
