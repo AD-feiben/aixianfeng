@@ -3,7 +3,7 @@ require.config({
        'jquery': './lib/jquery-3.1.1',
        'flexible': './lib/flexible',
        'backbone': './lib/backbone.min',
-       'underscore': 'underscore.min',
+       'underscore': './lib/underscore.min',
        'text': './lib/text'
    }
 });

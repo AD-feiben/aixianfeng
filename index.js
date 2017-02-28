@@ -57,6 +57,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
         $('.order').attr('src', path + 'order.png');
         $('.shop').attr('src', path + 'shop.png');
         $('.my').attr('src', path + 'my.png');
+        console.log(clsName);
 
         $('.' + clsName).attr('src', path + clsName + '2.png');
     }
