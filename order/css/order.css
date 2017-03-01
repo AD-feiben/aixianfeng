@@ -1,0 +1,130 @@
+header {
+    height: 1.4375rem;
+    margin-bottom: 10px;
+}
+
+.header-inner {
+    border-bottom: 2px solid #e0e0e0;
+    background: #f9fafd;
+    width: 100%;
+    max-width: 10rem;
+    height: 1.4375rem;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+header h2 {
+    text-align: center;
+    line-height: 1.4375rem;
+    font-size: 1.166em;
+}
+
+.order_menu {
+    border-top: 1px solid #a2a2a2;
+    border-bottom: 1px solid #a2a2a2;
+    margin-bottom: 16px;
+}
+
+.order_menu ul {
+    height: 1.0468rem;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+}
+
+.order_menu ul:nth-child(1) {
+    border-bottom: 2px solid #d2d2d2;
+}
+
+.order_menu ul li a {
+    width: 1.6406rem;
+    height: 1.0468rem;
+    line-height: 1.0468rem;
+    text-align: center;
+    display: block;
+    color: #898989;
+    font-weight: 600;
+}
+
+.order_menu ul li a.active {
+    color: #595656;
+}
+
+.order_menu ul:nth-child(1) li a.active {
+    border-bottom: 2px solid #595656;
+}
+
+.category {
+    border-top: 1px solid #a0a0a0;
+    background: #fff;
+}
+
+.category .title_wrap {
+    height: 0.9532rem;
+    padding: 19px 0 15px 17px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.category .title {
+    border-left: 10px solid #2bb1fa;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: normal;
+    text-indent: 19px;
+}
+
+.category ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.category ul li {
+    border-top: 2px solid #ccc;
+    display: flex;
+    height: 3.5rem;
+    position: relative;
+}
+
+.category .left {
+    width: 4.6875rem;
+}
+
+.category .left img {
+    height: 100%;
+    margin: 0 0.625rem;
+}
+
+.category .right {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.category .right .des {
+    margin-top: 0.4375rem;
+    font-size: 1.1666em;
+    line-height: 1.5em;
+}
+
+.category .right .price {
+    margin-top: 0.86rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f1361d;
+}
+
+.category .cart {
+    display: block;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #f1361d url("../../public/img/shoping.png") center no-repeat;
+    background-size: 0.625rem 0.625rem;
+    position: absolute;
+    right: 0.625rem;
+    bottom: 0.5156rem;
+}
