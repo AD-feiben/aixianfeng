@@ -16,7 +16,7 @@ footer {
 
 .footerBar {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     max-width: 10rem;

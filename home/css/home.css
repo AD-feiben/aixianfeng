@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     padding: 0 10px;
     background: #ffd600;
-    position: absolute;
+    position: fixed;
     top: 0;
     box-sizing: border-box;
     z-index: 100;
@@ -47,7 +47,7 @@ section {
     background: #fff;
 }
 
-.menu {
+/*.menu {
     padding: 0.3125rem;
     box-sizing: border-box;
 }
@@ -67,6 +67,34 @@ section {
 }
 
 .menu ul li img {
+    width: 100%;
+}*/
+
+.menu {
+    height: 4.3125rem;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.menu ul {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: space-between;
+}
+
+.menu li {
+    width: 25%;
+    position: relative;
+}
+
+.menu li a {
+    font-size: 0.91667em;
+    color: #353d44;
+}
+
+.menu li img {
     width: 100%;
 }
 
