@@ -28,7 +28,7 @@ header h2 {
 
 .tip {
     background: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
     padding-top: 0.667em;
     padding-bottom: 0.41667em;
     color: #999;
@@ -49,9 +49,50 @@ header h2 {
     text-indent: 0.8333em;
     position: relative;
     line-height: 1;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.3em;
 }
 
-.tipInfo{
-    font-size: 0.833em;
+.tipInfo {
+    font-size: 0.9em;
+}
+
+section {
+    height: 1.5625rem;
+    border-bottom: 2px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.1667em;
+    color: #333;
+}
+
+.sdTime {
+    color: #e64f1a;
+    text-indent: 1em;
+    flex: 1;
+}
+
+.reservable {
+    float: right;
+    padding-right: 1em;
+}
+
+.reservable a {
+    color: #333;
+}
+
+.remark{
+    margin-right: 1em;
+}
+
+.remarkInput{
+    width: 6.875rem;
+    height: 1.0468rem;
+    box-sizing: border-box;
+    border: 2px solid #cecece;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    font-size: 1em;
+    padding-left: 10px;
 }
