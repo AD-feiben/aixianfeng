@@ -80,12 +80,12 @@ section {
     color: #333;
 }
 
-.remark{
+.remark {
     margin-right: 1em;
 }
 
-.remarkInput{
-    width: 6.875rem;
+.remarkInput {
+    flex: 1;
     height: 1.0468rem;
     box-sizing: border-box;
     border: 2px solid #cecece;
@@ -94,4 +94,5 @@ section {
     border-radius: 7px;
     padding-left: 10px;
     font-size: 1em;
+    margin-right: 1em;
 }
