@@ -5,7 +5,6 @@ header {
 .header-inner {
     width: 100%;
     max-width: 10rem;
-    min-width: 320px;
     height: 1.4375rem;
     display: flex;
     align-items: center;
@@ -72,7 +71,7 @@ section {
 
 .menu {
     height: 4.3125rem;
-    padding: 20px;
+    padding: 0.3125rem;
     border-bottom: 2px solid #e0e0e0;
 }
 
@@ -119,7 +118,7 @@ section {
     flex: 1;
 }
 
-.news .right ul, .news .right ul li{
+.news .right ul, .news .right ul li {
     width: 100%;
     height: 100%;
 }
@@ -174,7 +173,7 @@ section {
 }
 
 .list1 li h3 {
-    margin-top: 0.34375rem;
+    padding-top: 0.34375rem;
 }
 
 .list1 .blue {
@@ -275,12 +274,12 @@ section {
 }
 
 .list3 .title {
-    border-left: 16px solid;
-    text-indent: 13px;
+    border-left: 0.25rem solid;
+    text-indent: 0.54em;
 }
 
 .list3 .more {
-    padding-right: 30px;
+    padding-right: 0.468rem;
     font-size: 0.9167em;
     color: #999;
     background: url('../../public/img/right.png') no-repeat right;
