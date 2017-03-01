@@ -13,7 +13,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
         home: function () {
             require(['text!./home/home.html', './home/js/home'], function (tpl, home) {
                 $('#container').html(tpl);
-                // home.getBanner(baseUrl+'apihome.php');
+                home.getBanner(baseUrl+'apihome.php');
             })
         },
         foudre: function () {
