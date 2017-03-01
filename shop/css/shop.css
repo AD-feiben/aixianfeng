@@ -82,6 +82,7 @@ section {
 
 .remark {
     margin-right: 1em;
+    white-space: nowrap;
 }
 
 .remarkInput {
@@ -93,6 +94,7 @@ section {
     -moz-border-radius: 7px;
     border-radius: 7px;
     padding-left: 10px;
-    font-size: 1em;
+    /*font-size: 1em;*/
     margin-right: 1em;
+
 }
