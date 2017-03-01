@@ -94,7 +94,65 @@ section {
     -moz-border-radius: 7px;
     border-radius: 7px;
     padding-left: 10px;
-    /*font-size: 1em;*/
     margin-right: 1em;
+}
 
+.commodities li {
+    height: 2.5rem;
+    border-bottom: 2px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    position: relative;
+}
+
+.check {
+    width: 1.56rem;
+    background: url("../../public/img/yellow_btnpng.png") center no-repeat;
+}
+
+.goods {
+    padding: 0.3125rem 0;
+}
+
+.goods img {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.525rem;
+}
+
+.info, .num{
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.ctrl{
+    width: 2.4375rem;
+    height: 0.875rem;
+    position: absolute;
+    bottom: 0.34375rem;
+    right: 0.34375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub, .add{
+    width: 0.875rem;
+    height: 0.875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ff4300;
+    border-radius: 50%;
+    border: 1px solid #ff4300;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
 }
