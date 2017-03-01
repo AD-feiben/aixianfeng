@@ -47,20 +47,15 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
     var router = new w();
 
     router.on('route', function (a) {
-        init(a)
-    });
-
-    function init(clsName) {
         var path = './public/img/';
         $('.home').attr('src', path + 'home.png');
         $('.foudre').attr('src', path + 'foudre.png');
         $('.order').attr('src', path + 'order.png');
         $('.shop').attr('src', path + 'shop.png');
         $('.my').attr('src', path + 'my.png');
-        console.log(clsName);
 
-        $('.' + clsName).attr('src', path + clsName + '2.png');
-    }
+        $('.' + a).attr('src', path + a + '2.png');
+    });
 
     backbone.history.start();
 });
