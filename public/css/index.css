@@ -9,6 +9,7 @@ body {
     width: 100%;
     max-width: 10rem;
     min-width: 320px;
+    overflow: hidden;
 }
 
 footer {
