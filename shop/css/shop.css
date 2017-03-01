@@ -1,0 +1,28 @@
+header {
+    height: 1.4375rem;
+    margin-bottom: 10px;
+}
+
+.header-inner {
+    border-bottom: 2px solid #e0e0e0;
+    background: #f9fafd;
+}
+
+header h2 {
+    text-align: center;
+    line-height: 1.4375rem;
+    font-size: 1.166em;
+}
+
+.inner {
+    padding-left: 0.4375rem;
+}
+
+.location {
+    height: 1.5rem;
+    background: #fff;
+    font-size: 1em;
+    color: #e64f1a;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}

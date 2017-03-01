@@ -6,13 +6,6 @@ header {
 .header-inner {
     border-bottom: 2px solid #e0e0e0;
     background: #f9fafd;
-    width: 100%;
-    max-width: 10rem;
-    height: 1.4375rem;
-    position: fixed;
-    top: 0;
-    box-sizing: border-box;
-    z-index: 100;
 }
 
 header h2 {
