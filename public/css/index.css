@@ -3,9 +3,11 @@ body {
     max-width: 10rem;
     margin: 0 auto;
     background: #efefef;
+    font: 16px/1.5 "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+    color: #333;
 }
 
-.header-inner{
+.header-inner {
     width: 100%;
     max-width: 10rem;
     height: 1.4375rem;
