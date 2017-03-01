@@ -55,6 +55,7 @@
     display: flex;
     padding: 0.21875rem 0;
     background: #f3c800;
+    margin-bottom: 0.2812rem;
 }
 
 .collect div {
@@ -74,6 +75,29 @@
     width: 0.5625rem;
     height: 0.5625rem;
     margin-right: 0.39rem;
+}
+
+.ident {
+    height: 1.5625rem;
+    border-bottom: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0 0.476rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myIdent {
+    color: #333;
+}
+
+.allIdent {
+    color: #999;
+    padding-right: 0.375rem;
+    background: url("../../public/img/right.png") no-repeat right;
+    -webkit-background-size: 0.3125rem 0.3125rem;
+    background-size: 0.3125rem 0.3125rem;
 }
 
 .nav ul {
@@ -121,6 +145,6 @@
     width: auto;
 }
 
-.links:nth-child(1) ul{
+.links {
     border-bottom: 2px solid #efefef;
 }
