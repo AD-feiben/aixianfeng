@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1775fea6-33d5-4d3c-bd65-d623c0ddf6c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/foudre/css/foudre.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/css/foudre.css" afterPath="$PROJECT_DIR$/foudre/css/foudre.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/foudre.html" afterPath="$PROJECT_DIR$/foudre/foudre.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/css/home.css" afterPath="$PROJECT_DIR$/home/css/home.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,21 +22,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="foudre.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="foudre.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="320">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#844#850#0" expanded="true" />
+                <element signature="e#891#897#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foudre.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="foudre.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -54,6 +56,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>add</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -65,7 +72,6 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/home/js/home.js" />
         <option value="$PROJECT_DIR$/home/home.html" />
-        <option value="$PROJECT_DIR$/home/css/home.css" />
         <option value="$PROJECT_DIR$/order/css/order.css" />
         <option value="$PROJECT_DIR$/shop/shop.html" />
         <option value="$PROJECT_DIR$/shop/css/shop.css" />
@@ -74,8 +80,9 @@
         <option value="$PROJECT_DIR$/my/my.html" />
         <option value="$PROJECT_DIR$/my/css/my.css" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/foudre/css/foudre.css" />
+        <option value="$PROJECT_DIR$/home/css/home.css" />
         <option value="$PROJECT_DIR$/foudre/foudre.html" />
+        <option value="$PROJECT_DIR$/foudre/css/foudre.css" />
       </list>
     </option>
   </component>
@@ -389,12 +396,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488286595495</updated>
       <workItem from="1488286598702" duration="7484000" />
-      <workItem from="1488329682514" duration="31390000" />
+      <workItem from="1488329682514" duration="35875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38874000" />
+    <option name="totallyTimeSpent" value="43359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -605,14 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -642,18 +641,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
+    <entry file="file://$PROJECT_DIR$/home/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        <state relative-caret-position="504">
+          <caret line="330" column="14" lean-forward="false" selection-start-line="330" selection-start-column="14" selection-end-line="330" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        <state relative-caret-position="320">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#844#850#0" expanded="true" />
+            <element signature="e#891#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
           <folding />
         </state>
       </provider>

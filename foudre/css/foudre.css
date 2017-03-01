@@ -34,7 +34,7 @@ header div img {
 .content {
     position: absolute;
     top: 1.4375rem;
-    bottom: 1.5625rem;
+    bottom: 0;
     width: 100%;
     display: flex;
 }
@@ -42,23 +42,28 @@ header div img {
 .category {
     width: 2.375rem;
     height: 100%;
-    overflow: auto;
 }
 
 .category ul {
-    display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: column;
+    overflow: auto;
+    background: #f8f8f8;
 }
 
-.category ul li {
+.category li {
     padding: 0.077rem 0;
     height: 1.1rem;
     border-bottom: 2px solid #e0e0e0;
     text-align: center;
     line-height: 1.1rem;
     position: relative;
+}
+
+.category .holder, .goods .holder {
+    padding: 0;
+    border: 0;
+    height: 1.5625rem;
 }
 
 .category a {
@@ -92,4 +97,57 @@ header div img {
 
 .goods {
     flex: 1;
+    background: #fff;
+    padding-left: 0.125rem;
+    position: relative;
+}
+
+.goods .header {
+    height: 1.25rem;
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0.125rem;
+    right: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.goods .header div {
+    flex: 1;
+    text-align: center;
+    line-height: 1.25rem;
+    color: #777;
+}
+
+.goods .header div:after {
+    content: '';
+    display: inline-block;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url("../../public/img/down.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.goods .header .sort:before {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 46%;
+    position: absolute;
+    background-color: #ddd;
+    top: 27%;
+}
+
+.goods ul {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.goods .goods-holder {
+    height: 1.28125rem;
 }
