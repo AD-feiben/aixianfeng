@@ -108,6 +108,8 @@ section {
 .check {
     width: 1.56rem;
     background: url("../../public/img/yellow_btnpng.png") center no-repeat;
+    -webkit-background-size:;
+    background-size: 0.5625rem 0.5625rem;
 }
 
 .goods {
