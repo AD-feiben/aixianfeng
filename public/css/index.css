@@ -5,6 +5,7 @@ body {
     background: #efefef;
     font: 16px/1.5 "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
     color: #333;
+    -webkit-overflow-scrolling : touch;
 }
 
 .header-inner {

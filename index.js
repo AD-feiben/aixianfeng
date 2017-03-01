@@ -40,7 +40,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
             $('#container').html('<h1>页面未找到</h1>');
         },
         initialize: function () {
-            window.location.hash = 'shop';
+            window.location.hash = 'my';
         }
     });
 

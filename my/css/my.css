@@ -1,0 +1,52 @@
+.userInfo {
+    height: 3.125rem;
+    background: #ffd600;
+    display: flex;
+    align-items: center;
+}
+
+.userInfo div {
+    height: 1.84375rem;
+}
+
+.fav {
+    width: 1.84375rem;
+    padding: 0 0.484375rem;
+}
+
+.fav img {
+    width: 100%;
+    height: 100%;
+}
+
+.phone {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.more {
+    width: 1.5625rem;
+    background: url("../../public/img/right2.png") no-repeat center;
+    -webkit-background-size: 0.34375rem 0.59375rem;
+    background-size: 0.34375rem 0.59375rem;
+}
+
+.phone .phoneNum {
+    color: #fff;
+    height: 0.89rem;
+    line-height: 0.89rem;
+}
+
+.type {
+    flex: 1;
+    background: url("../../public/img/logon.png") no-repeat left top;
+    -webkit-background-size: 2.601rem 0.875rem;
+    background-size: 2.601rem 0.875rem;
+    color: #e64f1a;
+    padding-top: 0.26rem;
+    line-height: 1;
+    text-indent: 0.92rem;
+    font-size: 0.8333em;
+    font-family: 'Adobe Fan Heiti Std B';
+}
