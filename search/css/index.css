@@ -1,0 +1,21 @@
+header {
+    height: 1.406rem;
+    border-bottom: 2px solid transparent;
+}
+
+header .inner {
+    height: 1.406rem;
+    border-bottom: 2px solid #e0e0e0;
+    background: #f9fafd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.return {
+
+}

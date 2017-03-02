@@ -191,6 +191,9 @@ header div img {
 .info .tag .tagName {
     border: 2px solid #f00;
     color: #f00;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .info .tag .pm_desc {

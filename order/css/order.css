@@ -93,6 +93,7 @@ header h2 {
 .category .right {
     flex: 1;
     padding-right: 1rem;
+    position: relative;
 }
 
 .category .right .des {
@@ -102,10 +103,12 @@ header h2 {
 }
 
 .category .right .price {
-    margin-top: 0.86rem;
     font-size: 1em;
     font-weight: bold;
     color: #f1361d;
+    position: absolute;
+    left: 0;
+    bottom: 0.625rem;
 }
 
 .category .cart {
