@@ -21,7 +21,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             require(["text!./home/css/home.css", 'text!./home/home.html', './home/js/home'], function (css, tpl, home) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                home.getBanner(baseUrl + 'apihome.php');
+                home.getData(baseUrl + 'apihome.php');
             })
         },
         foudre: function () {

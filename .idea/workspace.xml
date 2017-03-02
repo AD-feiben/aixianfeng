@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1775fea6-33d5-4d3c-bd65-d623c0ddf6c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/js/foudre.js" afterPath="$PROJECT_DIR$/foudre/js/foudre.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/js/home.js" afterPath="$PROJECT_DIR$/home/js/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,7 +25,7 @@
       <file leaf-file-name="foudre.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="324">
               <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="n#header#0;n#!!top" expanded="false" />
@@ -56,8 +56,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="513">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -66,16 +66,16 @@
       <file leaf-file-name="foudre.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/foudre/js/foudre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="189">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
-                <marker date="1488446733435" expanded="true" signature="251:302" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="565:1514" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="603:690" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="729:1492" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="838:903" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="1026:1229" ph="..." />
-                <marker date="1488446733435" expanded="true" signature="1273:1465" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="594:645" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="975:1919" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="1013:1099" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="1138:1897" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="1246:1311" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="1433:1634" ph="..." />
+                <marker date="1488448173822" expanded="true" signature="1678:1870" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,9 +84,14 @@
       <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding>
+                <marker date="1488448152973" expanded="true" signature="850:1013" ph="..." />
+                <marker date="1488448152973" expanded="true" signature="898:987" ph="..." />
+                <marker date="1488448152973" expanded="true" signature="1700:1912" ph="..." />
+                <marker date="1488448152973" expanded="true" signature="1752:1881" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +120,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>add</find>
+      <find>dataObj</find>
+      <find>home</find>
+      <find>jsonData</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/home/js/home.js" />
         <option value="$PROJECT_DIR$/my/my.css" />
         <option value="$PROJECT_DIR$/search/router.js" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
@@ -150,6 +157,7 @@
         <option value="$PROJECT_DIR$/foudre/foudre.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/home/js/home.js" />
         <option value="$PROJECT_DIR$/foudre/js/foudre.js" />
       </list>
     </option>
@@ -469,7 +477,7 @@
       <updated>1488286595495</updated>
       <workItem from="1488286598702" duration="7484000" />
       <workItem from="1488329682514" duration="35899000" />
-      <workItem from="1488415912161" duration="20119000" />
+      <workItem from="1488415912161" duration="21551000" />
     </task>
     <task id="LOCAL-00001" summary="finish foudre">
       <created>1488419830283</created>
@@ -482,7 +490,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63502000" />
+    <option name="totallyTimeSpent" value="64934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -791,17 +799,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="324">
           <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="n#header#0;n#!!top" expanded="false" />
@@ -818,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -834,26 +826,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="513">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <marker date="1488448152973" expanded="true" signature="850:1013" ph="..." />
+            <marker date="1488448152973" expanded="true" signature="898:987" ph="..." />
+            <marker date="1488448152973" expanded="true" signature="1700:1912" ph="..." />
+            <marker date="1488448152973" expanded="true" signature="1752:1881" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foudre/js/foudre.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="189">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <marker date="1488446733435" expanded="true" signature="251:302" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="565:1514" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="603:690" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="729:1492" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="838:903" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="1026:1229" ph="..." />
-            <marker date="1488446733435" expanded="true" signature="1273:1465" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="594:645" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="975:1919" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="1013:1099" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="1138:1897" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="1246:1311" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="1433:1634" ph="..." />
+            <marker date="1488448173822" expanded="true" signature="1678:1870" ph="..." />
           </folding>
         </state>
       </provider>
