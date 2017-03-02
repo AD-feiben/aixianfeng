@@ -36,6 +36,7 @@ header div img {
     top: 1.4375rem;
     bottom: 0;
     width: 100%;
+    max-width: 10rem;
     display: flex;
 }
 
@@ -141,14 +142,17 @@ header div img {
     background-color: #ddd;
     top: 27%;
 }
-.goods .list{
+
+.goods .list {
     width: 100%;
 
 }
+
 .goods ul {
     width: 100%;
     height: 100%;
     overflow: auto;
+    position: absolute;
 }
 
 .goods .goods-holder {
