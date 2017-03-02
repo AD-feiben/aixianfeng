@@ -54,8 +54,7 @@ define(['jquery'], function ($) {
                 </li>`
         }
 
-        html += `<li class="holder"></li>
-                    </ul>`;
+        html += `<li class="holder"></li></ul>`;
         $('.list').html(html);
     };
 

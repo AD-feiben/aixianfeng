@@ -111,6 +111,12 @@ header h2 {
     bottom: 0.625rem;
 }
 
+.category .right .price .oldPrice {
+    color: #999;
+    font-size: 0.667em;
+    text-decoration: line-through;
+}
+
 .category .cart {
     display: block;
     width: 1.0625rem;

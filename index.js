@@ -43,9 +43,10 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             })
         },
         order: function () {
-            require(['text!./order/order.html', 'text!./order/css/order.css'], function (tpl, css) {
+            require(['text!./order/order.html', 'text!./order/css/order.css', './order/js/order'], function (tpl, css, obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
+                obj.getData(`${baseUrl}apiyuding.php`);
             })
         },
         shop: function () {
