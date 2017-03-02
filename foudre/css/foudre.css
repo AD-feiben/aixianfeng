@@ -151,3 +151,98 @@ header div img {
 .goods .goods-holder {
     height: 1.28125rem;
 }
+
+.goods-list {
+    height: 2.8125rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+}
+
+.img {
+    width: 2.8125rem;
+    padding: 0.156rem;
+    box-sizing: border-box;
+}
+
+.img img {
+    width: 100%;
+}
+
+.info {
+    flex: 1;
+    position: relative;
+    line-height: 1;
+}
+
+.info .name {
+    color: #232b33;
+    font-size: 1em;
+    padding: 0.25rem 0;
+}
+
+.info .tag span {
+    display: inline-block;
+    padding: 0.3em 0.3em;
+    border-radius: 5px;
+    font-size: 0.75em;
+}
+
+.info .tag .tagName {
+    border: 2px solid #f00;
+    color: #f00;
+}
+
+.info .tag .pm_desc {
+    background: #f00;
+    color: #fff;
+}
+
+.info .specifics {
+    color: #999;
+    font-size: 0.75em;
+    padding: 0.667em 0;
+}
+
+.info .prices {
+    font-size: 0.75em;
+}
+
+.info .prices .price {
+    color: #ff400b;
+}
+
+.info .prices .oldPrice {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.ctrl {
+    width: 2.4375rem;
+    height: 0.875rem;
+    position: absolute;
+    bottom: 0.34375rem;
+    right: 0.34375rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sub, .add {
+    width: 0.875rem;
+    height: 0.875rem;
+    line-height: 0.75rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ff4300;
+    border-radius: 50%;
+    border: 1px solid #ff4300;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.sub, .count {
+    display: none;
+}
