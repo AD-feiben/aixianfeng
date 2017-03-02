@@ -2,6 +2,12 @@
 define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbone, FastClick) {
     FastClick.attach(document.body);
     var baseUrl = 'http://h5.yztctech.net/api/axf/';
+
+    $('.footerBar a').on('click', function(e){
+       window.location.hash = e.currentTarget.className;
+    });
+
+
     var w = backbone.Router.extend({
         routes: {
             'home': 'home',
@@ -22,9 +28,11 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             require(['text!./foudre/foudre.html', 'text!./foudre/css/foudre.css', './foudre/js/foudre'], function (tpl, css, Obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                Obj.getdata(`${baseUrl}apicategory.php?category=${encodeURIComponent('热销榜')}`);
+                if ($('.goods ul').length === 0) {
+                    Obj.getdata(`${baseUrl}apicategory.php?category=${encodeURIComponent('热销榜')}`);
+                }
                 $('.category').on('click', function (e) {
-                    if(e.target.nodeName == 'LI' && e.target.textContent){
+                    if (e.target.nodeName == 'LI' && e.target.textContent) {
                         $('.category li').removeClass('active');
                         $(e.target).addClass('active');
                         let categoryStr = e.target.textContent;
@@ -56,7 +64,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             $('#container').html('<h1>页面未找到</h1>');
         },
         initialize: function () {
-            window.location.hash = 'foudre';
+            window.location.hash = 'home';
         }
     });
 

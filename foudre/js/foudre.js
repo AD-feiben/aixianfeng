@@ -6,21 +6,21 @@ define(['jquery'], function ($) {
                 let jsonData = JSON.parse(data);
                 let html = `<ul>
                     <li class="goods-holder"></li>`;
-                for (let list of jsonData.data){
-                    let desc = list.pm_desc === '' ? '' : `<span class="pm_desc">${list.pm_desc}</span>`;
-                    html += `<li class="goods-list" id="list${list.id}">
+                for (let i in jsonData.data){
+                    let desc = jsonData.data[i].pm_desc === '' ? '' : `<span class="pm_desc">${jsonData.data[i].pm_desc}</span>`;
+                    html += `<li class="goods-list" id="list${jsonData.data[i].id}">
                     <div class="img">
-                        <img src="${list.img}">
+                        <img src="${jsonData.data[i].img}">
                     </div>
                     <div class="info">
-                        <p class="name">${list.name}</p>
+                        <p class="name">${jsonData.data[i].name}</p>
                         <p class="tag">
                             ${desc}
                         </p>
-                        <p class="specifics ">${list.specifics}</p>
+                        <p class="specifics ">${jsonData.data[i].specifics}</p>
                         <p class="prices">
-                            <span class="price">￥${list.price}</span>
-                            <span class="oldPrice">￥${list.market_price}</span>
+                            <span class="price">￥${jsonData.data[i].price}</span>
+                            <span class="oldPrice">￥${jsonData.data[i].market_price}</span>
                         </p>
 
                         <div class="ctrl">
