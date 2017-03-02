@@ -1,25 +1,25 @@
-define(['jquery'], function ($) {
+define(['jquery', 'fastclick'], function ($, FastClick) {
+    FastClick.attach(document.body);
     let obj = {};
     /*
-    * 使用GET方式发起HTTP请求
-    * param String  URL地址
-    */
+     * 使用GET方式发起HTTP请求
+     * param String  URL地址
+     */
     obj.getdata = function (url) {
-        let self = this;
         $.get(url, function (data, status) {
             if (status == 'success') {
                 // 将ajax响应的数据，转化为js对象
                 let objData = JSON.parse(data);
                 // 对数据进行处理
-                self.handleData(objData);
+                obj.handleData(objData);
             }
         })
     };
 
     /*
-    * 将数据生成DOM结构，插入DIV中
-    * param Object
-    */
+     * 将数据生成DOM结构，插入DIV中
+     * param Object
+     */
     obj.handleData = function (objData) {
         // 通过字符串拼接的方式处理数据
         let html = `<ul>
@@ -47,7 +47,7 @@ define(['jquery'], function ($) {
 
                         <div class="ctrl">
                             <div class="sub">-</div>
-                            <div class="count">1</div>
+                            <div class="count">0</div>
                             <div class="add">+</div>
                         </div>
                     </div>
@@ -56,6 +56,14 @@ define(['jquery'], function ($) {
 
         html += `<li class="holder"></li></ul>`;
         $('.list').html(html);
+
+        obj.addEvent();
+    };
+
+    obj.addEvent = function () {
+        $('.list .ctrl div').on('click', function (e) {
+            console.log(e.target);
+        })
     };
 
     return obj;

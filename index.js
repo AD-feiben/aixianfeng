@@ -65,8 +65,9 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             $('#container').html('<h1>页面未找到</h1>');
         },
         initialize: function () {
-            if (window.location.hash === '')
+            if (window.location.hash === '') {
                 window.location.hash = 'home';
+            }
         }
     });
 

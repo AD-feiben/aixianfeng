@@ -145,7 +145,6 @@ header div img {
 
 .goods .list {
     width: 100%;
-
 }
 
 .goods ul {
@@ -238,6 +237,10 @@ header div img {
     align-items: center;
 }
 
+.ctrl.active {
+    justify-content: space-between;
+}
+
 .sub, .add {
     width: 0.875rem;
     height: 0.875rem;
@@ -255,4 +258,12 @@ header div img {
 
 .sub, .count {
     display: none;
+}
+
+.count {
+    font-size: 0.8em;
+}
+
+.ctrl.active .sub, .ctrl.active .count {
+    display: block;
 }

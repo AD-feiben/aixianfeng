@@ -1,9 +1,11 @@
 require.config({
     paths:{
         'jquery': '../lib/jquery-3.1.1',
-        'flexible': '../lib/flexible'
+        'flexible': '../lib/flexible',
+        'fastclick': '../lib/fastclick',
+        'index': './index'
     }
 });
-require(['jquery', 'flexible'],function(){
+require(['jquery', 'flexible', 'index'],function(){
 
 });
