@@ -252,7 +252,7 @@ section {
     padding-right: 0.468rem;
     font-size: 0.9167em;
     color: #999;
-    background: url('../../public/img/right.png') no-repeat right;
+    background: url('./public/img/right.png') no-repeat right;
     -webkit-background-size: 0.25rem 0.3437rem;
     background-size: 0.25rem 0.3437rem;
 }

@@ -118,7 +118,7 @@ header h2 {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background: #f1361d url("../../public/img/shoping.png") center no-repeat;
+    background: #f1361d url("./public/img/shoping.png") center no-repeat;
     background-size: 0.625rem 0.625rem;
     position: absolute;
     right: 0.625rem;

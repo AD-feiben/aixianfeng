@@ -27,7 +27,7 @@
 
 .more {
     width: 1.5625rem;
-    background: url("../../public/img/right2.png") no-repeat center;
+    background: url("./public/img/right2.png") no-repeat center;
     -webkit-background-size: 0.34375rem 0.59375rem;
     background-size: 0.34375rem 0.59375rem;
 }
@@ -40,7 +40,7 @@
 
 .type {
     flex: 1;
-    background: url("../../public/img/logon.png") no-repeat left top;
+    background: url("./public/img/logon.png") no-repeat left top;
     -webkit-background-size: 2.601rem 0.875rem;
     background-size: 2.601rem 0.875rem;
     color: #e64f1a;
@@ -95,7 +95,7 @@
 .allIdent {
     color: #999;
     padding-right: 0.375rem;
-    background: url("../../public/img/right.png") no-repeat right;
+    background: url("./public/img/right.png") no-repeat right;
     -webkit-background-size: 0.3125rem 0.3125rem;
     background-size: 0.3125rem 0.3125rem;
 }

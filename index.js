@@ -11,29 +11,34 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
             '*defAction': 'defAction'
         },
         home: function () {
-            require(['text!./home/home.html', './home/js/home'], function (tpl, home) {
-                $('#container').html(tpl);
-                home.getBanner(baseUrl+'apihome.php');
+            require(["text!./home/css/home.css", 'text!./home/home.html', './home/js/home'], function (css, tpl, home) {
+                $('#container').html(`<style>${css}</style>`);
+                $('#container').append(tpl);
+                home.getBanner(baseUrl + 'apihome.php');
             })
         },
         foudre: function () {
-            require(['text!./foudre/foudre.html'], function (tpl) {
-                $('#container').html(tpl);
+            require(['text!./foudre/foudre.html','text!./foudre/css/foudre.css'], function (tpl, css) {
+                $('#container').html(`<style>${css}</style>`);
+                $('#container').append(tpl);
             })
         },
         order: function () {
-            require(['text!./order/order.html'], function (tpl) {
-                $('#container').html(tpl);
+            require(['text!./order/order.html', 'text!./order/css/order.css'], function (tpl, css) {
+                $('#container').html(`<style>${css}</style>`);
+                $('#container').append(tpl);
             })
         },
         shop: function () {
-            require(['text!./shop/shop.html'], function (tpl) {
-                $('#container').html(tpl);
+            require(['text!./shop/shop.html', 'text!./shop/css/shop.css'], function (tpl, css) {
+                $('#container').html(`<style>${css}</style>`);
+                $('#container').append(tpl);
             })
         },
         my: function () {
-            require(['text!./my/my.html'], function (tpl) {
-                $('#container').html(tpl);
+            require(['text!./my/my.html', 'text!./my/css/my.css'], function (tpl, css) {
+                $('#container').html(`<style>${css}</style>`);
+                $('#container').append(tpl);
             })
         },
         defAction: function () {

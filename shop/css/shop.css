@@ -108,7 +108,7 @@ section {
 /*选中状态*/
 .check {
     width: 1.56rem;
-    background: url("../../public/img/yellow_btnpng.png") center no-repeat;
+    background: url("./public/img/yellow_btnpng.png") center no-repeat;
     -webkit-background-size: 0.5625rem 0.5625rem;
     background-size: 0.5625rem 0.5625rem;
 }
@@ -170,7 +170,7 @@ section {
 
 .seleAll {
     width: 2.5rem;
-    background: url("../../public/img/yellow_btnpng.png") no-repeat 0.4218rem center;
+    background: url("./public/img/yellow_btnpng.png") no-repeat 0.4218rem center;
     -webkit-background-size: 0.5625rem;
     background-size: 0.5625rem;
     padding-left: 1.25rem;

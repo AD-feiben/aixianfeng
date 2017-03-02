@@ -90,7 +90,7 @@ header div img {
     position: absolute;
     top: 0;
     right: 0;
-    background: url("../../public/img/hot.png") no-repeat;
+    background: url("./public/img/hot.png") no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -126,7 +126,7 @@ header div img {
     display: inline-block;
     width: 0.45rem;
     height: 0.45rem;
-    background: url("../../public/img/down.png") no-repeat;
+    background: url("./public/img/down.png") no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
     vertical-align: middle;
