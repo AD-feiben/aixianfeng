@@ -1,5 +1,6 @@
 //处理路由
-define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
+define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbone, FastClick) {
+    FastClick.attach(document.body);
     var baseUrl = 'http://h5.yztctech.net/api/axf/';
     var w = backbone.Router.extend({
         routes: {
@@ -18,9 +19,19 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
             })
         },
         foudre: function () {
-            require(['text!./foudre/foudre.html','text!./foudre/css/foudre.css'], function (tpl, css) {
+            require(['text!./foudre/foudre.html', 'text!./foudre/css/foudre.css', './foudre/js/foudre'], function (tpl, css, Obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
+                Obj.getdata(`${baseUrl}apicategory.php?category=${encodeURIComponent('热销榜')}`);
+                $('.category').on('click', function (e) {
+                    if(e.target.nodeName == 'LI' && e.target.textContent){
+                        $('.category li').removeClass('active');
+                        $(e.target).addClass('active');
+                        let categoryStr = e.target.textContent;
+                        let URLStr = encodeURIComponent(categoryStr);
+                        Obj.getdata(`${baseUrl}apicategory.php?category=${URLStr}`);
+                    }
+                })
             })
         },
         order: function () {
@@ -45,7 +56,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, backbone) {
             $('#container').html('<h1>页面未找到</h1>');
         },
         initialize: function () {
-            window.location.hash = 'home';
+            window.location.hash = 'foudre';
         }
     });
 
