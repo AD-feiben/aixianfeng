@@ -3,8 +3,8 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
     FastClick.attach(document.body);
     var baseUrl = 'http://h5.yztctech.net/api/axf/';
 
-    $('.footerBar a').on('click', function(e){
-       window.location.hash = e.currentTarget.className;
+    $('.footerBar a').on('click', function (e) {
+        window.location.hash = e.currentTarget.className;
     });
 
 
@@ -65,7 +65,8 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             $('#container').html('<h1>页面未找到</h1>');
         },
         initialize: function () {
-            window.location.hash = 'home';
+            if (window.location.hash === '')
+                window.location.hash = 'home';
         }
     });
 
