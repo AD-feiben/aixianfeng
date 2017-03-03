@@ -169,15 +169,16 @@ section {
 }
 
 .seleAll {
-    width: 2.5rem;
+    width: 2.11rem;
     background: url("./public/img/yellow_btnpng.png") no-repeat 0.4218rem center;
     -webkit-background-size: 0.5625rem;
     background-size: 0.5625rem;
     padding-left: 1.25rem;
-
+    box-sizing: border-box;
 }
 
 .total {
+    margin-left: 0.78rem;
     flex: 1;
 }
 

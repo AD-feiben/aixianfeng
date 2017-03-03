@@ -1,14 +1,22 @@
 //处理路由
-define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbone, FastClick) {
+define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function ($, _, backbone, FastClick, DB) {
     FastClick.attach(document.body);
-    var baseUrl = 'http://h5.yztctech.net/api/axf/';
+    let baseUrl = 'http://h5.yztctech.net/api/axf/';
 
     $('.footerBar a').on('click', function (e) {
         window.location.hash = e.currentTarget.className;
     });
+    let shopCount = 0;
+    DB.queryData(function (cursor) {
+        shopCount += cursor.value.count;
+        if (shopCount === 0) {
+            $('.corner').css('display', 'none')
+        } else {
+            $('.corner').css('display', 'block').text(shopCount);
+        }
+    });
 
-
-    var w = backbone.Router.extend({
+    let w = backbone.Router.extend({
         routes: {
             'home': 'home',
             'foudre': 'foudre',
@@ -28,18 +36,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             require(['text!./foudre/foudre.html', 'text!./foudre/css/foudre.css', './foudre/js/foudre'], function (tpl, css, Obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                if ($('.goods ul').length === 0) {
-                    Obj.getdata(`${baseUrl}apicategory.php?category=${encodeURIComponent('热销榜')}`);
-                }
-                $('.category').on('click', function (e) {
-                    if (e.target.nodeName == 'LI' && e.target.textContent) {
-                        $('.category li').removeClass('active');
-                        $(e.target).addClass('active');
-                        let categoryStr = e.target.textContent;
-                        let URLStr = encodeURIComponent(categoryStr);
-                        Obj.getdata(`${baseUrl}apicategory.php?category=${URLStr}`);
-                    }
-                })
+                Obj.init();
             })
         },
         order: function () {
@@ -50,9 +47,10 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
             })
         },
         shop: function () {
-            require(['text!./shop/shop.html', 'text!./shop/css/shop.css'], function (tpl, css) {
+            require(['text!./shop/shop.html', 'text!./shop/css/shop.css', './shop/js/shop.js'], function (tpl, css, obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
+                obj.init();
             })
         },
         my: function () {
@@ -71,10 +69,10 @@ define(['jquery', 'underscore', 'backbone', 'fastclick'], function ($, _, backbo
         }
     });
 
-    var router = new w();
+    let router = new w();
 
     router.on('route', function (a) {
-        var path = './public/img/';
+        let path = './public/img/';
         $('.home').attr('src', path + 'home.png');
         $('.foudre').attr('src', path + 'foudre.png');
         $('.order').attr('src', path + 'order.png');

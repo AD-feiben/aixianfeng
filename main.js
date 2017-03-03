@@ -6,7 +6,8 @@ require.config({
         'backbone': './lib/backbone.min',
         'underscore': './lib/underscore.min',
         'fastclick': './lib/fastclick',
-        'text': './lib/text'
+        'text': './lib/text',
+        'handleDB': './public/js/handleDB'
     }
 });
 
