@@ -105,7 +105,6 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
 
     obj.addEvent = function () {
         $('.list .ctrl div').on('click', function (e) {
-            alert("indexedDB" in window);
             let parent = e.target.parentNode,
                 grandNode = parent.parentNode,
                 count = parseInt($(parent).find('.count').text()),
