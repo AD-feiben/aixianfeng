@@ -221,16 +221,16 @@ section {
 }
 
 .empty p {
-    padding-top: 0.28125rem;
-    padding-bottom: 0.4218rem;
+    padding-top: 0.5625rem;
+    padding-bottom: 0.84375rem;
 }
 
 .empty .goShop {
-    width: 1.8125rem;
-    height: 0.4375rem;
+    width: 3.625rem;
+    height: 0.875rem;
     box-sizing: border-box;
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    line-height: 0.4375rem;
+    line-height: 0.875rem;
     margin: 0 auto;
 }
