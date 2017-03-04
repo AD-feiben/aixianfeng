@@ -23,7 +23,7 @@ define([], function () {
 
             request.onupgradeneeded = function (event) {
                 // 创建Object Store
-                this.createObjectStore(event);
+                obj.createObjectStore(event);
             }
         },
         // 创建Object Store
