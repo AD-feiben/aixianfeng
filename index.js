@@ -9,13 +9,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
 
     // 数据库查询
     let shopCount = 0;
-    let indexedDB = window.indexedDB || window.webkitIndexedDB
-        || window.mozIndexedDB || window.msIndexedDB || null;
-    if (indexedDB) {
-        alert('支持');
-    } else {
-        alert('不支持');
-    }
     DB.queryData(function (result) {
         for (let i in result) {
             shopCount += result[i].value.count;
