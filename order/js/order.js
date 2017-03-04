@@ -5,6 +5,7 @@ define(['jquery'], function ($) {
             $.get(url, function (data, status) {
                 if (status == 'success') {
                     self.handleData(JSON.parse(data));
+                    $('.load').css('display', 'none');
                 }
             });
         },

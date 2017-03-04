@@ -35,6 +35,7 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
 
                     $('.commodities ul').html(str);
                     $('.money').text(`￥${money.toFixed(2)}`);
+                    $('.load').css('display', 'none');
                     this.addEvent();
                 }
             });

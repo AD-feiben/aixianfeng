@@ -10,7 +10,7 @@ define(['jquery', 'swiper'], function ($, Swiper) {
             if (status == 'success') {
                 let objData = JSON.parse(data);
                 self.handleData(objData);
-
+                $('.load').css('display', 'none');
             } else {
                 console.log('数据请求失败');
             }

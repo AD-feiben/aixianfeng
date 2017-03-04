@@ -33,7 +33,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(["text!./home/css/home.css", 'text!./home/home.html', './home/js/home'], function (css, tpl, home) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                $('.load').css('display', 'none');
                 home.getData(baseUrl + 'apihome.php');
             })
         },
@@ -41,7 +40,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(['text!./foudre/foudre.html', 'text!./foudre/css/foudre.css', './foudre/js/foudre'], function (tpl, css, Obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                $('.load').css('display', 'none');
                 Obj.init();
             })
         },
@@ -49,7 +47,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(['text!./order/order.html', 'text!./order/css/order.css', './order/js/order'], function (tpl, css, obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                $('.load').css('display', 'none');
                 obj.getData(`${baseUrl}apiyuding.php`);
             })
         },
@@ -57,7 +54,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(['text!./shop/shop.html', 'text!./shop/css/shop.css', './shop/js/shop.js'], function (tpl, css, obj) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                $('.load').css('display', 'none');
                 obj.init();
             })
         },
@@ -65,7 +61,6 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(['text!./my/my.html', 'text!./my/css/my.css'], function (tpl, css) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
-                $('.load').css('display', 'none');
             })
         },
         defAction: function () {

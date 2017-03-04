@@ -41,6 +41,8 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                 let objData = JSON.parse(data);
                 // 对数据进行处理
                 obj.handleData(objData, query);
+
+                $('.load').css('display', 'none');
             }
         })
     };
