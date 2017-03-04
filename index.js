@@ -33,6 +33,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(["text!./home/css/home.css", 'text!./home/home.html', './home/js/home'], function (css, tpl, home) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
+                $('.load').css('display', 'none');
                 home.getData(baseUrl + 'apihome.php');
             })
         },

@@ -65,12 +65,14 @@ section {
     align-items: center;
     color: #333;
 }
+
 /*预计时间*/
 .sdTime {
     color: #e64f1a;
     text-indent: 1em;
     flex: 1;
 }
+
 /*可预订*/
 .reservable {
     float: right;
@@ -80,6 +82,7 @@ section {
 .reservable a {
     color: #333;
 }
+
 /*收货备注*/
 .remark {
     margin-right: 1em;
@@ -97,6 +100,7 @@ section {
     padding-left: 10px;
     margin-right: 1em;
 }
+
 /*购物车列表*/
 .commodities li {
     height: 2.5rem;
@@ -105,6 +109,7 @@ section {
     display: flex;
     position: relative;
 }
+
 /*选中状态*/
 .check {
     width: 1.56rem;
@@ -186,4 +191,46 @@ section {
     width: 3.125rem;
     background: #ffd600;
     text-align: center;
+}
+
+.empty {
+    display: none;
+    position: absolute;
+    top: 1.4375rem;
+    right: 0;
+    bottom: 1.5625rem;
+    left: 0;
+    background: #efefef;
+    z-index: 100;
+    padding-top: 2rem;
+    color: #999;
+    line-height: 1;
+    text-align: center;
+    font-size: 0.21875rem;
+}
+
+.empty .img {
+    margin: 0 auto;
+    width: 2.9375rem;
+    height: 2.9375rem;
+}
+
+.empty .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.empty p {
+    padding-top: 0.28125rem;
+    padding-bottom: 0.4218rem;
+}
+
+.empty .goShop {
+    width: 1.8125rem;
+    height: 0.4375rem;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    line-height: 0.4375rem;
+    margin: 0 auto;
 }

@@ -6,7 +6,9 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
             DB.queryData((result) => {
                 if(result.length == 0){
                     // 购物车是空的
+                    $('.empty').css('display', 'block');
                 }else{
+                    $('.empty').css('display', 'none');
                     let str = '';
                     for (let i in result) {
                         let obj = result[i].value;
@@ -35,7 +37,10 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
                     $('.money').text(`￥${money.toFixed(2)}`);
                     this.addEvent();
                 }
-            })
+            });
+            $('.goShop').on('click', function(){
+                window.location.hash = 'home';
+            });
         },
         addEvent: function () {
             $('.commodities li').on('click', function (e) {
@@ -92,6 +97,9 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
         changeUI: function (obj) {
             if (obj.count === 0) {
                 $(obj.li).remove();
+                if($('.commodities li').length === 0){
+                    $('.empty').css('display', 'block');
+                }
             } else {
                 obj.$count.text(obj.count);
             }

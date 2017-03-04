@@ -72,3 +72,47 @@ footer {
 .corner.active {
     display: block;
 }
+
+.load {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ffd82b;
+    z-index: 1000;
+    text-align: center;
+    line-height: 1;
+}
+
+.load img {
+    width: 100%;
+}
+
+.load .intro {
+    position: absolute;
+    left: 2rem;
+    top: 3.828125rem;
+    width: 6rem;
+    height: 3rem;
+}
+
+.load .gps {
+    width: 1.125rem;
+    height: 1.125rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    margin: 0 auto;
+}
+
+.load p{
+    position: absolute;
+    top: 9.22rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 0.406rem;
+    color: #333;
+}
