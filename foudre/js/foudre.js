@@ -1,21 +1,31 @@
 define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
     FastClick.attach(document.body);
-    let shopCount = parseInt($('.corner').text());
+    let shopCount = parseInt($('.corner').text()) || 0;
     let baseUrl = 'http://h5.yztctech.net/api/axf/';
     let obj = {};
-
+    // 初始化函数
     obj.init = function () {
-        if ($('.goods ul').length === 0) {
+        // 页面刚加载的时候默认显示热销榜
+        if ($('.list ul').length === 0) {
             let query = encodeURIComponent('热销榜');
             obj.getdata(`${baseUrl}apicategory.php?category=${query}`, query);
         }
         $('.category').on('click', function (e) {
+            // 判断点击事件的触发源
             if (e.target.nodeName == 'LI' && e.target.textContent) {
                 $('.category li').removeClass('active');
                 $(e.target).addClass('active');
+                //获取查询参数
                 let categoryStr = e.target.textContent;
                 let URLStr = encodeURIComponent(categoryStr);
-                obj.getdata(`${baseUrl}apicategory.php?category=${URLStr}`, URLStr);
+                $('.list ul').css('display', 'none');
+                let id = URLStr.replace(/%/g, '');
+                // 判断ul是否加载过了
+                if (($(`#${id}`).length)) {
+                    $(`#${id}`).css('display', 'block');
+                } else {
+                    obj.getdata(`${baseUrl}apicategory.php?category=${URLStr}`, URLStr);
+                }
             }
         });
     };
@@ -40,7 +50,8 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
      */
     obj.handleData = function (objData, query) {
         // 通过字符串拼接的方式处理数据
-        let html = `<ul>
+        let id = query.replace(/%/g, '');
+        let html = `<ul id="${id}">
                     <li class="goods-holder"></li>`;
 
         // 遍历数据
@@ -48,7 +59,8 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
             // 判断 objData.data[i].pm_desc 是否为空
             // 如果为空就不生成span标签
             let desc = objData.data[i].pm_desc === '' ? '' : `<span class="pm_desc">${objData.data[i].pm_desc}</span>`;
-            html += `<li class="goods-list" id="${query}${objData.data[i].id}">
+            // 拼接字符串生成DOM结构
+            html += `<li class="goods-list" id="${id}${objData.data[i].id}">
                     <div class="img">
                         <img src="${objData.data[i].img}">
                     </div>
@@ -73,9 +85,22 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
         }
 
         html += `<li class="holder"></li></ul>`;
-        $('.list').html(html);
-
+        $('.list').append(html);
+        obj.queryData();
         obj.addEvent();
+    };
+
+    obj.queryData = function () {
+        DB.queryData(function (result) {
+            for(let i in result){
+                let cursor = result[i],
+                    key = cursor.key,
+                    obj = cursor.value,
+                    $li = $(`#${key}`);
+                $li.find('.ctrl').addClass('active');
+                $li.find('.count').text(`${obj.count}`);
+            }
+        })
     };
 
     obj.addEvent = function () {
@@ -119,7 +144,7 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                         count--;
                         shopCount--;
                         if (shopCount === 0) {
-                            $('.corner').css('display', 'none')
+                            $('.corner').css('display', 'none');
                         } else {
                             $('.corner').css('display', 'block').text(shopCount);
                         }
@@ -127,8 +152,6 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                     });
                     break;
             }
-
-
         })
     };
 

@@ -1,13 +1,17 @@
-define(['jquery', 'handleDB'], function($, DB){
+define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
+    FastClick.attach(document.body);
     let obj = {
-        init: function(){
+        init: function () {
             let money = 0;
-            DB.queryData(function(cursor){
-                let obj = cursor.value;
-                let price = Number(obj.price.substr(1));
-                console.log(price);
-                money += price * obj.count;
-                let str = `<li>
+            DB.queryData((result) => {
+                let str = '';
+                for (let i in result) {
+                    let obj = result[i].value;
+                    // 去除￥符号
+                    let price = Number(obj.price.substr(1));
+                    // 计算总价
+                    money += price * obj.count;
+                    str += `<li id="${obj.productID}">
                             <div class="check"></div>
                             <div class="goods"><img src="${obj.img}"></div>
                             <div class="detail">
@@ -22,9 +26,76 @@ define(['jquery', 'handleDB'], function($, DB){
                                 </div>
                             </div>
                         </li>`;
-                $('.commodities ul').append(str);
-                $('.money').text(`￥${money}`);
+                }
+
+                $('.commodities ul').html(str);
+                $('.money').text(`￥${money.toFixed(2)}`);
+                this.addEvent();
             })
+        },
+        addEvent: function () {
+            $('.commodities li').on('click', function (e) {
+                if (e) {
+                    let li = e.currentTarget,
+                        $count = $(e.currentTarget).find('.count'),
+                        $shopCount = $('.corner'),
+                        $price = $(e.currentTarget).find('.num span'),
+                        $money = $('.money'),
+                        productID = li.id,
+                        count = parseInt($count.text()),
+                        shopCount = parseInt($shopCount.text()),
+                        price = Number($price.text().substr(1)),
+                        money = Number($money.text().substr(1));
+                    switch (e.target.className) {
+                        case 'sub':
+                            DB.subData({productID: productID}, function () {
+                                count--;
+                                shopCount--;
+                                money -= price;
+                                obj.changeUI({
+                                    count,
+                                    li,
+                                    $count,
+                                    shopCount,
+                                    $shopCount,
+                                    $money,
+                                    money
+                                });
+                            });
+                            break;
+                        case 'add':
+                            DB.addData({productID: productID}, function () {
+                                count++;
+                                shopCount++;
+                                money += price;
+                                obj.changeUI({
+                                    count,
+                                    li,
+                                    $count,
+                                    shopCount,
+                                    $shopCount,
+                                    $money,
+                                    money
+                                });
+                            });
+                            break;
+                        case 'check':
+                            break;
+                    }
+                }
+            });
+        },
+        changeUI: function (obj) {
+            if (obj.count === 0) {
+                $(obj.li).remove();
+            } else {
+                obj.$count.text(obj.count);
+            }
+            if (obj.shopCount === 0) {
+                obj.$shopCount.css('display', 'none');
+            }
+            obj.$money.text(`￥${obj.money.toFixed(2)}`);
+            obj.$shopCount.text(obj.shopCount);
         }
     };
     return obj;

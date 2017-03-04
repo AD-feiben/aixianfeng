@@ -6,9 +6,13 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
     $('.footerBar a').on('click', function (e) {
         window.location.hash = e.currentTarget.className;
     });
+
+    // 数据库查询
     let shopCount = 0;
-    DB.queryData(function (cursor) {
-        shopCount += cursor.value.count;
+    DB.queryData(function (result) {
+        for (let i in result){
+            shopCount += result[i].value.count;
+        }
         if (shopCount === 0) {
             $('.corner').css('display', 'none')
         } else {

@@ -9,7 +9,7 @@ define([], function () {
         // 获取indexedDB, 因为内核不同，需要加上前缀
         indexedDB: window.indexedDB || window.webkitIndexedDB
         || window.mozIndexedDB || window.msIndexedDB,
-        // 添加数据库
+        // 创建或者打开数据库
         createOrOpenDB: function (isReadOnly,fun) {
             let request = indexedDB.open(this.dbInfo.dbName, this.dbInfo.dbVersion);
 
@@ -99,11 +99,18 @@ define([], function () {
             this.createOrOpenDB(true, (store) => {
                 if(store){
                     let request = store.openCursor();
+                    let result = [];
                     request.onsuccess = (event) => {
                         let cursor = event.target.result;
                         if(cursor){
-                            success(cursor);
+                            result.push({
+                                key : cursor.key,
+                                value:　cursor.value
+                            });
                             cursor.continue();
+                        }else{
+                            success(result);
+                            console.log('数据查询结束');
                         }
                     };
                     request.onerror = (event) => {
