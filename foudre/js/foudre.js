@@ -121,7 +121,8 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                 };
             switch (e.target.className) {
                 case 'add' :
-                    alert('添加数据')
+                    alert('添加数据');
+                    alert(JSON.stringify(data));
                     DB.addData(data, function () {
                         alert('数据添加成功');
                         if (count === 0) {
@@ -136,7 +137,6 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                         }
                         $(parent).find('.count').text(count);
                     }, function(){alert('数据添加失败')});
-                    // console.log(data);
                     break;
                 case 'sub' :
                     DB.subData(data, function () {
