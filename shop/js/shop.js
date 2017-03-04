@@ -4,14 +4,17 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
         init: function () {
             let money = 0;
             DB.queryData((result) => {
-                let str = '';
-                for (let i in result) {
-                    let obj = result[i].value;
-                    // 去除￥符号
-                    let price = Number(obj.price.substr(1));
-                    // 计算总价
-                    money += price * obj.count;
-                    str += `<li id="${obj.productID}">
+                if(result.length == 0){
+                    // 购物车是空的
+                }else{
+                    let str = '';
+                    for (let i in result) {
+                        let obj = result[i].value;
+                        // 去除￥符号
+                        let price = Number(obj.price.substr(1));
+                        // 计算总价
+                        money += price * obj.count;
+                        str += `<li id="${obj.productID}">
                             <div class="check"></div>
                             <div class="goods"><img src="${obj.img}"></div>
                             <div class="detail">
@@ -26,11 +29,12 @@ define(['jquery', 'handleDB', 'fastclick'], function ($, DB, FastClick) {
                                 </div>
                             </div>
                         </li>`;
-                }
+                    }
 
-                $('.commodities ul').html(str);
-                $('.money').text(`￥${money.toFixed(2)}`);
-                this.addEvent();
+                    $('.commodities ul').html(str);
+                    $('.money').text(`￥${money.toFixed(2)}`);
+                    this.addEvent();
+                }
             })
         },
         addEvent: function () {

@@ -1,10 +1,11 @@
 define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
     FastClick.attach(document.body);
-    let shopCount = parseInt($('.corner').text()) || 0;
     let baseUrl = 'http://h5.yztctech.net/api/axf/';
     let obj = {};
+    let shopCount;
     // 初始化函数
     obj.init = function () {
+        shopCount = parseInt($('.corner').text()) || 0;
         // 页面刚加载的时候默认显示热销榜
         if ($('.list ul').length === 0) {
             let query = encodeURIComponent('热销榜');
@@ -92,7 +93,7 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
 
     obj.queryData = function () {
         DB.queryData(function (result) {
-            for(let i in result){
+            for (let i in result) {
                 let cursor = result[i],
                     key = cursor.key,
                     obj = cursor.value,
