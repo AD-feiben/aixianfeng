@@ -121,7 +121,9 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                 };
             switch (e.target.className) {
                 case 'add' :
+                    alert('添加数据')
                     DB.addData(data, function () {
+                        alert('数据添加成功');
                         if (count === 0) {
                             $(parent).addClass('active');
                         }
@@ -133,7 +135,7 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
                             $('.corner').css('display', 'block').text(shopCount);
                         }
                         $(parent).find('.count').text(count);
-                    });
+                    }, function(){alert('数据添加失败')});
                     // console.log(data);
                     break;
                 case 'sub' :

@@ -44,6 +44,7 @@ define([], function () {
                     let request = store.get(data.productID);
                     //数据查询成功
                     request.onsuccess = (event) => {
+                        alert('数据查询成功');
                         let obj = event.target.result;
                         let req = '';
                         if (obj) {
@@ -58,6 +59,7 @@ define([], function () {
                     };
                     // 数据查询失败
                     request.onerror = (event) => {
+                        alert('数据读取失败');
                         console.log('数据读取失败!!!');
                         console.info(event);
                     }
