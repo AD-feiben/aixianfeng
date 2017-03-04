@@ -122,6 +122,7 @@ define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
             switch (e.target.className) {
                 case 'add' :
                     alert('添加数据');
+                    alert(data);
                     alert(JSON.stringify(data));
                     DB.addData(data, function () {
                         alert('数据添加成功');
