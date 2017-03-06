@@ -1,5 +1,4 @@
-define(['jquery', 'fastclick', 'handleDB'], function ($, FastClick, DB) {
-    FastClick.attach(document.body);
+define(['jquery', 'handleDB'], function ($, DB) {
     let baseUrl = 'http://h5.yztctech.net/api/axf/';
     let obj = {};
     let shopCount;

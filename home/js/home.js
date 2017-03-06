@@ -1,4 +1,4 @@
-define(['jquery', 'swiper'], function ($, Swiper) {
+define(['jquery', 'swiper', 'handleDB'], function ($, Swiper, DB) {
     let obj = {};
     /*
      * 使用GET方式发起HTTP请求
@@ -62,6 +62,30 @@ define(['jquery', 'swiper'], function ($, Swiper) {
         }
         str_menu += `</ul>`;
         $('.menu').html(str_menu);
+    };
+
+    obj.init = function () {
+        $('.list3 .add').on('click', function(e){
+            let parent = e.target.parentNode,
+                productID = parent.id,
+                name = $(parent).find('.name').text(),
+                price = $(parent).find('.price').text(),
+                img = $(parent).find('img').attr('src');
+            let data={
+                productID,
+                count: 1,
+                name,
+                price,
+                img
+            };
+            DB.addData(data,function(){
+                let shopCount = parseInt($('.corner').text()) || 0;
+                if(shopCount === 0){
+                    $('.corner').css('display', 'block');
+                }
+                $('.corner').text(++shopCount);
+            });
+        })
     };
 
     return obj;

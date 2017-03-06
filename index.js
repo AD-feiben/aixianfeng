@@ -34,6 +34,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
                 home.getData(baseUrl + 'apihome.php');
+                home.init();
             })
         },
         foudre: function () {
