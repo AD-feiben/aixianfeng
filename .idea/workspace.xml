@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1775fea6-33d5-4d3c-bd65-d623c0ddf6c6" name="Default" comment="" />
+    <list default="true" id="1775fea6-33d5-4d3c-bd65-d623c0ddf6c6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/order/js/order.js" afterPath="$PROJECT_DIR$/order/js/order.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,16 +45,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="order.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/order/js/order.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding>
-                <marker date="1488804852506" expanded="false" signature="466:551" ph="..." />
-                <marker date="1488804852506" expanded="true" signature="1109:1594" ph="..." />
-                <marker date="1488804852506" expanded="true" signature="1156:1261" ph="..." />
-                <marker date="1488804852506" expanded="true" signature="1309:1495" ph="..." />
+                <marker date="1488808417466" expanded="false" signature="466:551" ph="..." />
+                <marker date="1488808417466" expanded="true" signature="1109:1594" ph="..." />
+                <marker date="1488808417466" expanded="true" signature="1156:1261" ph="..." />
+                <marker date="1488808417466" expanded="true" signature="1309:1495" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="389">
+              <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
               <folding>
                 <element signature="e#724#915#0" expanded="false" />
               </folding>
@@ -222,11 +224,11 @@
         <option value="$PROJECT_DIR$/home/home.html" />
         <option value="$PROJECT_DIR$/shop/js/shop.js" />
         <option value="$PROJECT_DIR$/home/js/home.js" />
-        <option value="$PROJECT_DIR$/order/js/order.js" />
         <option value="$PROJECT_DIR$/foudre/css/foudre.css" />
         <option value="$PROJECT_DIR$/order/css/order.css" />
         <option value="$PROJECT_DIR$/foudre/js/foudre.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/order/js/order.js" />
       </list>
     </option>
   </component>
@@ -470,7 +472,7 @@
       <workItem from="1488415912161" duration="30779000" />
       <workItem from="1488504309541" duration="25825000" />
       <workItem from="1488589216345" duration="26353000" />
-      <workItem from="1488761810928" duration="8698000" />
+      <workItem from="1488761810928" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="finish foudre">
       <created>1488419830283</created>
@@ -483,7 +485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135038000" />
+    <option name="totallyTimeSpent" value="136286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -927,14 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/js/shop.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -960,19 +954,6 @@
             <marker date="1488804734672" expanded="true" signature="964:1053" ph="..." />
             <marker date="1488804734672" expanded="true" signature="1766:1978" ph="..." />
             <marker date="1488804734672" expanded="true" signature="1818:1947" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/js/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding>
-            <marker date="1488804852506" expanded="false" signature="466:551" ph="..." />
-            <marker date="1488804852506" expanded="true" signature="1109:1594" ph="..." />
-            <marker date="1488804852506" expanded="true" signature="1156:1261" ph="..." />
-            <marker date="1488804852506" expanded="true" signature="1309:1495" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1015,10 +996,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="389">
+          <caret line="64" column="50" lean-forward="true" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
           <folding>
             <element signature="e#724#915#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/js/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <marker date="1488808417466" expanded="false" signature="466:551" ph="..." />
+            <marker date="1488808417466" expanded="true" signature="1109:1594" ph="..." />
+            <marker date="1488808417466" expanded="true" signature="1156:1261" ph="..." />
+            <marker date="1488808417466" expanded="true" signature="1309:1495" ph="..." />
           </folding>
         </state>
       </provider>

@@ -53,7 +53,6 @@ define(['jquery', 'handleDB'], function ($, DB) {
                     price,
                     img
                 };
-                console.log(data);
                 DB.addData(data,function(){
                     let shopCount = parseInt($('.corner').text()) || 0;
                     if(shopCount === 0){
