@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1775fea6-33d5-4d3c-bd65-d623c0ddf6c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/js/foudre.js" afterPath="$PROJECT_DIR$/foudre/js/foudre.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/home.html" afterPath="$PROJECT_DIR$/home/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/js/home.js" afterPath="$PROJECT_DIR$/home/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/js/shop.js" afterPath="$PROJECT_DIR$/shop/js/shop.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +20,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -35,16 +30,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="83" column="57" lean-forward="false" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+            <state relative-caret-position="348">
+              <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
               <folding>
-                <marker date="1488768499439" expanded="true" signature="916:1079" ph="..." />
-                <marker date="1488768499439" expanded="true" signature="964:1053" ph="..." />
-                <marker date="1488768499439" expanded="true" signature="1766:1978" ph="..." />
-                <marker date="1488768499439" expanded="true" signature="1818:1947" ph="..." />
+                <marker date="1488769513219" expanded="true" signature="916:1079" ph="..." />
+                <marker date="1488769513219" expanded="true" signature="964:1053" ph="..." />
+                <marker date="1488769513219" expanded="true" signature="1766:1978" ph="..." />
+                <marker date="1488769513219" expanded="true" signature="1818:1947" ph="..." />
               </folding>
             </state>
           </provider>
@@ -446,7 +441,7 @@
       <workItem from="1488415912161" duration="30779000" />
       <workItem from="1488504309541" duration="25825000" />
       <workItem from="1488589216345" duration="26353000" />
-      <workItem from="1488761810928" duration="3365000" />
+      <workItem from="1488761810928" duration="4017000" />
     </task>
     <task id="LOCAL-00001" summary="finish foudre">
       <created>1488419830283</created>
@@ -459,7 +454,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129705000" />
+    <option name="totallyTimeSpent" value="130357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -927,14 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -983,14 +970,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="83" column="57" lean-forward="false" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+        <state relative-caret-position="348">
+          <caret line="82" column="43" lean-forward="false" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
           <folding>
-            <marker date="1488768499439" expanded="true" signature="916:1079" ph="..." />
-            <marker date="1488768499439" expanded="true" signature="964:1053" ph="..." />
-            <marker date="1488768499439" expanded="true" signature="1766:1978" ph="..." />
-            <marker date="1488768499439" expanded="true" signature="1818:1947" ph="..." />
+            <marker date="1488769513219" expanded="true" signature="916:1079" ph="..." />
+            <marker date="1488769513219" expanded="true" signature="964:1053" ph="..." />
+            <marker date="1488769513219" expanded="true" signature="1766:1978" ph="..." />
+            <marker date="1488769513219" expanded="true" signature="1818:1947" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
