@@ -2,6 +2,12 @@ header {
     height: 1.4375rem;
 }
 
+p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .header-inner {
     display: flex;
     align-items: center;

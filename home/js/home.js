@@ -78,9 +78,7 @@ define(['jquery', 'swiper', 'handleDB'], function ($, Swiper, DB) {
                 price,
                 img
             };
-            console.log('add');
             DB.addData(data,function(){
-                console.log('add success');
                 let shopCount = parseInt($('.corner').text()) || 0;
                 if(shopCount === 0){
                     $('.corner').css('display', 'block');

@@ -1,4 +1,4 @@
-define(['jquery'], function ($) {
+define(['jquery', 'handleDB'], function ($, DB) {
     return obj = {
         getData: function (url) {
             let self = this;
@@ -17,13 +17,13 @@ define(['jquery'], function ($) {
             for (let i in objData.product) {
                 let priceStr = '';
                 if (objData.product[i].market_price === objData.product[i].price) {
-                    priceStr = `<span>￥${objData.product[i].price}</span>`;
+                    priceStr = `<span class="newPrice">￥${objData.product[i].price}</span>`;
                 } else {
-                    priceStr = `<span>￥${objData.product[i].price}</span>
+                    priceStr = `<span class="newPrice">￥${objData.product[i].price}</span>
                     <span class="oldPrice">￥${objData.product[i].market_price}</span>`;
                 }
 
-                str += `<li id="list${i}">
+                str += `<li id="orderList${i}">
                             <div class="left">
                                 <img src="${objData.product[i].img}">
                             </div>
@@ -37,6 +37,31 @@ define(['jquery'], function ($) {
 
             str += `</ul>`;
             $('.category').html(str);
+            this.handleEvent();
+        },
+        handleEvent: function(){
+            $('.cart').on('click', function(e){
+                let add = e.target,
+                    productID = add.parentNode.id,
+                    name = $(add.parentNode).find('.des').text(),
+                    price = $(add.parentNode).find('.newPrice').text(),
+                    img = $(add.parentNode).find('img').attr('src');
+                let data={
+                    productID,
+                    count: 1,
+                    name,
+                    price,
+                    img
+                };
+                console.log(data);
+                DB.addData(data,function(){
+                    let shopCount = parseInt($('.corner').text()) || 0;
+                    if(shopCount === 0){
+                        $('.corner').css('display', 'block');
+                    }
+                    $('.corner').text(++shopCount);
+                });
+            })
         }
     }
 });
