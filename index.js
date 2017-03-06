@@ -62,6 +62,7 @@ define(['jquery', 'underscore', 'backbone', 'fastclick', 'handleDB'], function (
             require(['text!./my/my.html', 'text!./my/css/my.css'], function (tpl, css) {
                 $('#container').html(`<style>${css}</style>`);
                 $('#container').append(tpl);
+                $('.load').css('display', 'none');
             })
         },
         defAction: function () {
